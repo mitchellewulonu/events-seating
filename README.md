@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Seated
 
-## Getting Started
+Wedding and event guests enter their name to see their assigned table and seatmates.
 
-First, run the development server:
+## Stack
+
+- Next.js app in this folder
+- Neon Postgres provisioned with Stripe Projects (`neon/free` + `neon/postgres`)
+- Credentials synced via `stripe projects env --pull` into the project `.env` (symlinked as `.env.local`)
+
+## Local setup
 
 ```bash
+# from the Stripe Projects workspace root
+stripe projects env --pull
+
+# from this app folder
+node --env-file=.env.local scripts/setup-db.mjs
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3002](http://localhost:3002) (or the port Next prints) and try names like **Ava Chen** or **Noah Patel**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployed on Vercel (provisioned via Stripe Projects):
 
-## Learn More
+- https://events-seating.vercel.app
 
-To learn more about Next.js, take a look at the following resources:
+## Demo guest names
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Table | Guests |
+|------:|--------|
+| 1 Garden Olive | Ava Chen, Marcus Webb, Priya Nair, James Ortega, Elena Brooks |
+| 2 Candlewick | Noah Patel, Sofia Ramirez, Liam O'Connor, Mia Thompson, Owen Blake |
+| 3 River Birch | Harper Diaz, Ethan Cole, Isla Nguyen, Caleb Foster, Nora Quinn |
+| 4 Evening Jasmine | Amelia Hart, Lucas Kim, Chloe Bennett, Benjamin Shaw, Grace Holloway |
+| 5 Harbor Light | Henry Adler, Zoe Martins, Jack Ellison, Ruby Santos, Leo Fontaine |
