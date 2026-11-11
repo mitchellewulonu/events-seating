@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Stripe Projects — commit state.json for share/clone; keep local secrets out
+.projects/state.local.json
+.projects/vault/
+.projects/cache/
