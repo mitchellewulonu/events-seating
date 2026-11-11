@@ -1,0 +1,85 @@
+{
+  "version": 4,
+  "project": {
+    "catalog": "prod",
+    "initializedAt": "2026-11-11T12:23:27.591Z",
+    "merchantDisplayName": null,
+    "merchantId": "acct_1UaYekK39JLRC83J",
+    "projectId": "project_61VjyW73xfbjhiCTl16Vjwc6AYGCFhLEosV1AGVIWP9k",
+    "projectName": "mitchelle"
+  },
+  "providers": {
+    "neon": {
+      "accountRequestId": "facctrq_61VjyoHlYR4U8QAoU16Vjwc6AYGCFhLEosV1AGVIW4hU",
+      "configuration": {},
+      "linkedAt": "2026-11-11T12:42:15.821Z",
+      "providerId": "prvdr_61UH8uNXFdoJUJOtT54AC",
+      "providerName": "Neon",
+      "redirectUrl": null,
+      "requestedAt": "2026-11-11T12:42:14.041Z",
+      "status": "complete"
+    },
+    "vercel": {
+      "accountRequestId": "facctrq_61VjysjnZBAGVxKCM16Vjwc6AYGCFhLEosV1AGVIWC3E",
+      "configuration": {},
+      "linkedAt": "2026-11-11T12:46:52.447Z",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "redirectUrl": null,
+      "requestedAt": "2026-11-11T12:46:49.169Z",
+      "status": "complete"
+    }
+  },
+  "resources": {
+    "events-seating": {
+      "configuration": {
+        "name": "events-seating"
+      },
+      "createdAt": "2026-11-11T12:47:08.903Z",
+      "lastRevealedAt": "2026-11-11T12:47:09.392Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "events-seating",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "resourceId": "fres_61Vjyt2GqWd2fWvc516Vjwc6AYGCFhLEosV1AGVIWO40",
+      "serviceId": "project"
+    },
+    "neon-plan": {
+      "configuration": {},
+      "createdAt": "2026-11-11T12:42:17.526Z",
+      "lastRevealedAt": "2026-11-11T12:42:17.977Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "neon-plan",
+      "providerId": "prvdr_61UH8uNXFdoJUJOtT54AC",
+      "providerName": "Neon",
+      "resourceId": "fres_61VjyoKZFmDbBHUwr16Vjwc6AYGCFhLEosV1AGVIWPzE",
+      "serviceId": "free"
+    },
+    "seating-db": {
+      "configuration": {},
+      "createdAt": "2026-11-11T12:42:24.030Z",
+      "lastRevealedAt": "2026-11-11T12:42:24.569Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "seating-db",
+      "providerId": "prvdr_61UH8uNXFdoJUJOtT54AC",
+      "providerName": "Neon",
+      "resourceId": "fres_61VjyoR0k7bgmvQwt16Vjwc6AYGCFhLEosV1AGVIWCH2",
+      "serviceId": "postgres"
+    },
+    "vercel-plan": {
+      "configuration": {},
+      "createdAt": "2026-11-11T12:46:53.470Z",
+      "lastRevealedAt": "2026-11-11T12:46:53.929Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "vercel-plan",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "resourceId": "fres_61VjysnPkutujuhUn16Vjwc6AYGCFhLEosV1AGVIWFWK",
+      "serviceId": "hobby"
+    }
+  }
+}
